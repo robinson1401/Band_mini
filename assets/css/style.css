@@ -21,8 +21,13 @@ body {
 #main {}
 
 #header {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
     height          : 46px;
     background-color: #000;
+    z-index         : 1;
 }
 
 #nav {
@@ -105,9 +110,33 @@ body {
 }
 
 #slider {
-    min-height: 500px;
+    margin-top : 46px;
+    padding-top: 50%;
+    position   : relative;
+    background : url('../img/slider/slider2.jpg') top center / cover no-repeat;
 }
 
-#content {}
+#slider .text-content {
+    position     : absolute;
+    color        : red;
+    bottom       : 48px;
+    text-align   : center;
+    width        : 100%;
+    /* left      : 50%;
+    transform    : translateX(-50%); */
+}
+
+#slider .text-heading {
+    font-weight: 600;
+    font-size  : 24px;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+}
+
+#content {
+    height: 1000px;
+}
 
 #footer {}
