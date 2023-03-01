@@ -135,8 +135,52 @@ body {
     margin-top: 25px;
 }
 
-#content {
-    height: 1000px;
+#content .content-section {
+    width  : 800px;
+    margin : 0 auto;
+    padding: 64px 0;
 }
+
+#content .section-heading {
+    font-size     : 30px;
+    text-align    : center;
+    font-weight   : 500px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#content .sub-section-heading {
+    font-size : 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity   : .6;
+}
+
+
+#content .about-text {
+    margin-top : 25px;
+    font-size  : 15px;
+    text-align : justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    display        : flex;
+    justify-content: space-between;
+
+}
+
+#content .member-item {
+    width: 150px;
+}
+
+.member-img {
+    height             : 250px;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+}
+
 
 #footer {}
