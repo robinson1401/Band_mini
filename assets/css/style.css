@@ -5,7 +5,11 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.text-white {
+    color: #fff;
 }
 
 /* 1. Vị trí
@@ -136,9 +140,10 @@ body {
 }
 
 #content .content-section {
-    width  : 800px;
-    margin : 0 auto;
-    padding: 64px 0;
+    width       : 800px;
+    margin-right: auto;
+    margin-left : auto;
+    padding     : 64px 0;
 }
 
 #content .section-heading {
@@ -168,18 +173,56 @@ body {
 #content .member-list {
     display        : flex;
     justify-content: space-between;
-
+    margin-top     : 48px;
 }
 
 #content .member-item {
-    width: 150px;
+    width     : 150px;
+    text-align: center;
+
 }
 
-.member-img {
+#content .member-img {
+    margin-top         : 15px;
     height             : 250px;
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
+    border-radius      : 5px;
+}
+
+.container {
+    background-color: #000;
+}
+
+.container .booking {
+    background-color: #fff;
+    margin-top      : 40px;
+}
+
+.container li {
+    padding      : 11px 16px;
+    border-bottom: 1px solid #ddd;
+    list-style   : none;
+}
+
+.container .sold-out {
+    background-color: #f44336;
+    padding         : 3px 4px;
+    color           : #fff;
+    margin-left     : 16px;
+}
+
+.container .quantity {
+    width           : 25px;
+    height          : 25px;
+    float           : right;
+    background-color: #000;
+    color           : #fff;
+    border-radius   : 50%;
+    text-align      : center;
+    line-height     : 25px;
+    margin-top      : -3px;
 }
 
 
